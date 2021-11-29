@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language title="Russian (RU)" date_format="j M Y" time_format="H:i" currency_format="{value} {symbol}" week_start="1" decimal_point="." thousands_separator="," label_separator=":" comma_separator=", " ellipsis="..." parenthesis_open="(" parenthesis_close=")" language_code="ru-RU" text_direction="LTR" user_selectable="1" addon_id="MDV/XFRMRHD" base_version_id="1000070" export_version="2">
+  <phrase title="permission.resource_mdv_downloadFromHistory" addon_id="MDV/XFRMRHD" version_id="1000070" version_string="1.0.0"><![CDATA[Скачивание ресурсов с истории]]></phrase>
+</language>
