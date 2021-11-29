@@ -1,0 +1,9 @@
+{
+    "template": "xfrm_resource_history",
+    "description": "Delete button \"Download\"",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\t\t\t\t\t\t<xf:if is=\"$hasDownload AND $resource.canDownload()\">\n\t\t\t\t\t\t\t<xf:if is=\"$version.isDownloadable()\">\n\t\t\t\t\t\t\t\t<xf:action href=\"{{ link('resources/version/download', $version) }}\" target=\"_blank\"\n\t\t\t\t\t\t\t\t\toverlay=\"{{ $version.file_count > 1 }}\">{{ phrase('download') }}</xf:action>\n\t\t\t\t\t\t\t<xf:else />\n\t\t\t\t\t\t\t\t<xf:cell class=\"dataList-cell--alt\"></xf:cell>\n\t\t\t\t\t\t\t</xf:if>\n\t\t\t\t\t\t</xf:if>",
+    "replace": "\t\t\t\t\t\t<xf:if is=\"$xf.visitor.hasPermission('resource', 'mdv_downloadFromHistory')\">\n\t\t\t\t\t\t\t<xf:if is=\"$hasDownload AND $resource.canDownload()\">\n\t\t\t\t\t\t\t\t<xf:if is=\"$version.isDownloadable()\">\n\t\t\t\t\t\t\t\t\t<xf:action href=\"{{ link('resources/version/download', $version) }}\" target=\"_blank\"\n\t\t\t\t\t\t\t\t\t\toverlay=\"{{ $version.file_count > 1 }}\">{{ phrase('download') }}</xf:action>\n\t\t\t\t\t\t\t\t<xf:else />\n\t\t\t\t\t\t\t\t\t<xf:cell class=\"dataList-cell--alt\"></xf:cell>\n\t\t\t\t\t\t\t\t</xf:if>\n\t\t\t\t\t\t\t</xf:if>\n\t\t\t\t\t\t</xf:if>"
+}
